@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Orbitron&display=swap');
+
+:root{
+    --font01: Arial, Verdana, sans-serif;
+    --font02: 'Dela Gothic One', sans-serif;
+    --font03: 'Orbitron', sans-serif;
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+    background-color: rgba(131, 0, 0, 0.589);
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.541), rgba(255, 0, 0, 0.582));
+    font-family: var(--font01);
+    text-align: center;
+}
