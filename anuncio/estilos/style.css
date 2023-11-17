@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Paleta de cores */
+:root {
+    --cor01: #2E005E;
+    --cor02: #421983;
+    --cor03: #C7FA73;
+    --cor04: #B880FF;
+}
+    div#corpo {
+    max-width: 800px;
+    height: 400px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #421983;
+}
+
+header {
+    background-color: #2E005E;
+    border-radius: 15px;
+}
+
+div#ic {
+    color: white;
+    
+}
+
