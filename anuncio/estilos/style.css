@@ -13,20 +13,41 @@
     --cor04: #B880FF;
 }
     div#corpo {
+    font-family: Arial, Helvetica, sans-serif;
     max-width: 800px;
     height: 400px;
     margin: auto;
     border-radius: 15px;
-    background-color: #421983;
+    background-color;
 }
 
-header {
+header div#ic  {
     background-color: #2E005E;
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px ;
+    margin-top: 15px;
 }
 
-div#ic {
+div#ic> span {
     color: white;
+    font-size: 2.5em;
+    height: 10px;
+    position: relative;
+    right: -10px;
+}
+
+section {
+    background-color: #421983;
+    height: 85px;
+}
+
+section > span {
+    color: white;
+    padding: 30px;
+}
+
+section > input[type=button] {
+    position: relative;
+    
     
 }
 
