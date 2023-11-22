@@ -82,16 +82,12 @@ main p {
     font-family: 'Cormorant Garamond', serif;
 }
 
+img {
+    width: 200px;
+}
+ 
 div.conteiner {
-    text-align: right;
     position: relative;
-    
-    
+    left: 70%;
+    right: 50%;
 }
-
-div.textoimagem {
-    position: absolute;
-    
-}
-
-
