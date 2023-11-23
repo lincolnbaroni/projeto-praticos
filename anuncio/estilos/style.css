@@ -20,7 +20,7 @@
     height: 400px;
     margin: auto;
     border-radius: 15px;
-    background-color;
+    
 }
 
 header div#ic  {
@@ -82,12 +82,23 @@ main p {
     font-family: 'Cormorant Garamond', serif;
 }
 
-img {
-    width: 200px;
-}
- 
 div.conteiner {
     position: relative;
-    left: 70%;
-    right: 50%;
+    width: 250px;
+    left: 65%;
+    
+}
+
+div.conteiner > img {
+    width: 100%;
+   
+}
+
+.textoimg  {
+    position: absolute;
+    text-align: center;
+    color: black;
+    left: 0;
+    top: 0;
+    
 }
