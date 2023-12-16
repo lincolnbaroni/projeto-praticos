@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin-left: 15px;
+}
+
+img {
+    width: 400px;
+}
+
+:root {
+    --font01: Arial, Helvetica, sans-serif;
+    --font02: 'Noto Serif', serif;
+
+    --cor01: #0487D9;
+    --cor02: #D5EDF2;
+    --cor03: #D9AD29;
+    --cor03: #A6977B;
+    --cor04: #73624D;
+}
+
