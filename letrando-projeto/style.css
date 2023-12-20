@@ -71,13 +71,45 @@ img {
 }
 
 .menu1 {
-    display: block;
+    background-color: black;
+    display: flex;
+    padding: 5px;
 }
 
 .menu1 ul {
+    display: flex;
     list-style: none;
 }
+
+.menu1 li {
+    padding: 5px;
+}
 .menu1 a {
+    font-size: 0.9em;
+    font-family: var(--font02);
     text-decoration: none;
+    color: white;
+    padding: 6px;
+}
+
+.menu1 a:hover {
+    background-color: var(--cor02);
+    border-radius: 5px;
+    font-weight: bolder;
     color: black;
+}
+
+.link {
+    display: flex;
+}
+
+.menu2 ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu2 li {
+    display: flex;
+    padding: 5px;
 }
