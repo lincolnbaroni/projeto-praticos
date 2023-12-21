@@ -103,13 +103,40 @@ img {
     display: flex;
 }
 
-.menu2 ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+.menu2 {
+    background-color: var(--cor01);
+    padding: 5px;
+    text-align: center;
 }
 
-.menu2 li {
-    display: flex;
-    padding: 5px;
+.menu2 ul {
+    display: inline-flex;   
+    list-style-type: none;
+}
+
+.menu2 ul li {
+    padding: 8px;
+    margin: 10px;
+    text-align: center;
+    text-justify: distribute;
+}
+
+.menu2 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+nav ul li:hover .sub-menu-1 {
+    display: block;
+    
+    margin-top: 15px;
+    margin-left: -38px;
+}
+
+nav ul li:hover .sub-menu-1 ul {
+    display: block;
 }
