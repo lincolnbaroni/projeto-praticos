@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgray;
+}
+
+.conteiner-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.conteiner {
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.input {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #444;
+    border-radius: 18px;
+}
+
+.input span {
+    color: white;
+    cursor: pointer;
+}
+
+.input input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1em;
+}
+
+.input input:focus-visible {
+    outline: none;
+}

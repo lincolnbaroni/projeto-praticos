@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 100vh;
+   height: 100vh;
 }
 
 :root {
@@ -57,21 +57,44 @@ img {
     font-family: var(--font01);
     text-align: center;
     line-height: 1em;
+    
 }
 
-.conteiner {
-    background-color: black;
-}
 
 .conteiner-wrapper {
-    
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .input-wrapper {
-    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 8px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.input-wrapper span {
+    color: black;
+    cursor: pointer;
+}
+
+.input-wrapper input {
+    border: none;
+    padding: 8px;
+    border-radius: 16px;
+    width: 350px;
+    background-color: transparent;
+    color: black;
+    font-size: 0.9em;
+}
+
+.input-wrapper input:focus-visible {
+    outline: none;
 }
 
 .menu1 {
@@ -121,7 +144,7 @@ img {
     color: white;
     text-decoration: none;
     padding: 15px;
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 .menu2 li a:hover {
