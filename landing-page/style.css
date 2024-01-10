@@ -3,6 +3,10 @@
 
 :root {
     --font01: 'Salsa', cursive;
+    --cor01: orange;
+    --cor02: rgb(0, 0, 129);
+    --cor03: yellow;
+    --cor04: rgb(206, 206, 206);
 }
 
 * {
@@ -12,13 +16,21 @@
     font-family: var(--font01);
 }
 
+.corpo {
+    margin: 0 auto;
+    background-color: var(--cor04);
+    padding: 10px;
+    height: 800px;
+}
+
 .header {
-    border: 1px solid black;
     padding: 10px;
     margin-top: 15px;
 }
 
 .conteiner {
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +55,8 @@
     background-color: black;
     color: white;
     transition: 0.6s;
-    transform: translateX();
+    transform: scale(1.1, 1.1);
+    transform: translate(3px, 3px);
 }
 
 .conteiner .logo span {
@@ -58,12 +71,109 @@
 .conteudo-lista ul li{
     list-style: none;
     display: flex;
-    padding: 0px 20px;
+    padding: 0px 40px;
 }
 
 .conteudo-lista ul li a {
     text-decoration: none;
-    color: rgb(116, 116, 116);
+    color: rgb(104, 104, 104);
     cursor: pointer;
+    font-size: 1em;
+}
+
+.cadastro button {
+    width: 120px;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.cadastro .cad1{
+    background-image: linear-gradient(to right, rgba(137, 43, 226, 0.753),  rgba(226, 43, 113, 0.555));
+    color: black;
+}
+
+.cadastro .cad2 {
+    background-color: rgb(185, 185, 252);
+}
+
+.cadastro .cad1:hover, 
+.cadastro .cad2:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1, 1.1);
+    transform: translate(3px, 2px); 
+    transition-duration: 0.6s;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+section .conteudo {
+    max-width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+
+.conteudo .texto {
+    width: 150%;
+}
+
+.conteudo .texto h1 {
+    color: var(--cor02);
+    text-align: left;
+    width: 400px;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo .texto p {
+    padding-top: 40px;
+    line-height: 1.4em;
+    font-style: italic;
     font-size: 1.1em;
+    width: 400px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.main .botao {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main .botao button {
+    background-image: linear-gradient(to right, rgba(70, 12, 124, 0.753),  rgba(226, 43, 113, 0.555));
+   padding: 15px;
+   width: 170px;
+   border-radius: 20px;
+   border: none;
+   color: white;
+   margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.main .botao button:hover {
+    background-image: linear-gradient(to right, rgba(166, 99, 228, 0.753),  rgba(100, 46, 67, 0.555));
+    color: black;
+    transform: scale(1.1, 1.1);
+    transform: translate(3px, 3px);
+    transition-duration: 0.6s;
+}
+
+.imagem img {
+    position: relative;
+    right: 20%;
+    width: 100%;
 }
