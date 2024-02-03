@@ -139,7 +139,7 @@ padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #e7e7e7;
-    padding: .5rem .5rem;
+    padding: .5rem .9rem;
     font-size: inherit;
     transition: background-color: 150ms;
 }
@@ -148,9 +148,84 @@ padding: 0.5rem;
     background-color: #ddd;
 }
 
-.category .active {
+.categories .active {
     background-color: #606060;
     color: white;
     border-color: #eee;
 }
 
+
+.category:last-child {
+    margin-right: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.youtube-logo {
+    height: 60px;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0px 0px 0px 200px
+    
+}
+
+.search {
+    width: 70%;
+    font-size: inherit;
+    padding: 0.6em;
+    border: 1px solid #777;
+    margin-left: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: 1px solid #777;
+    background-color: #f8f8f8;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+}
+
+.search-btn:focus {
+    
+}
+
+.search-btn img {
+    width: 35px;
+    padding: 0px 5px;
+}
+
+.search-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-icons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu-icons img {
+    width: 20px;
+}
+
+.menu-channel-icon img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: #aaa;
+}
