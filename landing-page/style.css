@@ -9,6 +9,10 @@
     --cor04: rgb(206, 206, 206);
 }
 
+html, body {
+    overflow: hidden;
+}
+
 * {
     margin: 0px;
     padding: 0px;
