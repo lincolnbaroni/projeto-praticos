@@ -22,7 +22,7 @@ html, body {
 }
 
 .center {
-    width: 1280´px;
+    width: 1200´px;
     margin: 0 auto;
 }
 
@@ -54,11 +54,12 @@ html, body {
     width: 400px;
     height: calc(100% + 30px);
     background-color: white;
+    background-clip: padding-box;
     float: right;
     position: relative;
     top: -15px;
     right: 150px;
-    border: 8px solid #ccc;
+    border: 8px solid rgba(120, 120, 120, 0.7);
 }
 
 .form h2 {
@@ -107,4 +108,54 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #3e417e;
 }
+.container-list {
+    padding: 30px;
+    margin: 40px 0px 0px 50px;
+    float: left;
+    width: 619px;
+    height: 320px;
+    border-radius: 10px;
+    background-color: rgba(33, 35, 67, 0.7);
+}
 
+.container-list ul {
+    list-style-position: inside;
+    
+}
+.container-list ul li {
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.container-2 {
+    padding: 40px 0px;
+    background-color: rgba(240, 240, 240);
+    text-align: center;
+}
+
+.container-2 h2 {
+    font-size: 2em;
+    font-weight: normal;
+}
+.container-2 p {
+    line-height: 1.5em;
+    margin: 15px 0px;
+    font-size: 1.1em;
+    width: 698px;
+    display: inline-block;
+    text-align: justify;
+}
+
+
+.arrow {
+    position: relative;
+    top: 60px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/arrow.png);
+    background-size: 100% 100%;
+    
+}
