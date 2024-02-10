@@ -11,6 +11,10 @@ html, body {
     height: 100%;
 }
 
+.clear {
+    clear: both;
+}
+
 @font-face {
     src:url('../fonts/OpenSans_Condensed-Light.ttf');
     font-family: 'Open Sans';
@@ -200,3 +204,14 @@ form input[type="submit"]:hover {
     width: 70px;
 }
 
+.footer {
+    padding: 40px 0px;
+    border-top: 4px solid #888888;
+    text-align: center;
+    color: #888;
+}
+
+.footer p {
+    margin-top: 8px;
+    font-size: 1.4em;
+}
