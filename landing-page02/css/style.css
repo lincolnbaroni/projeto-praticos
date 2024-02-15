@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: font01;
+    src:url(../fonts/Inter-VariableFont_slnt\,wght.ttf)
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: font01;
+    height: 100%;
+    background-image: url(../imagens/background01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 20%;
+    margin: 15px 15px;
+}
+
+.sobre ul {
+    display: flex;
+    list-style: none;
+    margin-right: 65px;
+    
+}
+.sobre ul li {
+    padding: 0px 25px;
+    font-size: 1.2em;
+}
+
+.sobre ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.185);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.center {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-texto {
+    margin-right: 40%;
+    width: 520px;
+}
+
+.conteudo-texto h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 40px 0px;
+}
+
+.conteudo-texto p {
+    color: white;
+    line-height: 25px;
+}
+
+.p {
+    margin-top: 40px;
+    width: 350px;
+    font-size: 1.2em;
+}
+
+.form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    padding: 18px;
+    border-radius: 8px;
+    background-color: rgba(000, 000, 000, 0.4);
+    
+}
+
+.form .label {
+    color: white;
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+    margin: 10px 0px;
+}
+
+.form .input {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+.form .input:focus {
+    outline: none;
+}
+
+.form .botao {
+    width: 50%;
+    margin-top: 20px;
+    padding: 12px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(0, 128, 0, 0.726);
+}
+form .botao:hover {
+    background-color: rgb(0, 128, 0);
+    cursor: pointer;
+}
+
+.linha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha hr {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.linha p {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    width: 65%;
+}
+
+@media screen and (max-width: 600px) {
+    .logo img {
+        display: none;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo-texto{
+        padding: 10px;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .conteudo-texto p {
+        font-size: 20px;
+        color: black;
+        font-weight: bolder;
+    }
+
+    .conteudo-texto h1 {
+        font-size: 20px;
+    }
+
+    .p{
+        width: 100%;
+        text-align: center;
+    }
+
+    body, html {
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    .linha p {
+        padding: 10px;
+    }
+
+}
