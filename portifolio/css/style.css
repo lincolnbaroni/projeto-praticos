@@ -1,0 +1,155 @@
+@charset "UF-8";
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Saira Extra Condensed", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: cornflowerblue;
+}
+
+.sidebar-pos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img-sidebar {
+    text-align: center;
+}
+
+.img-sidebar img  {
+    width: 70%;
+    border: 8px solid rgb(174, 199, 247);
+    border-radius: 50%;
+}
+
+.menu {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.menu a {
+    max-width: 100px;
+    color: white;
+    opacity: 0.5;
+    font-size: 18px;
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(201, 201, 201);
+
+}
+
+.menu a.select {
+    opacity: 1;
+}
+
+.content {
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 3%;
+}
+
+.descricao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.descricao h2 {
+    color: cornflowerblue;
+    font-size: 36px;
+}
+
+section.descricao span,
+section.descricao h3 span
+ {
+    color: rgb(70, 103, 165);
+}
+
+section.descricao h3 {
+    color: #6c757d;
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+section.descricao p {
+    font-size: 1.1em;
+    margin-top: 40px;
+    max-width: 600px;
+}
+
+.icons-social a {
+    padding: 13px;
+    margin: 0px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(71, 71, 71);
+    border-radius: 50%;
+}
+
+.icons-social {
+    margin-top: 30px;
+    font-size: 1.2em;   
+}
+
+@media screen and (max-width: 620px) {
+    .sidebar {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+    }
+
+    .sidebar-pos {
+        position: relative;
+        top: 20;
+    }
+
+    .img-sidebar img  {
+        width: 150px;
+    }
+
+    .menu {
+        padding-bottom: 20px;
+    }
+
+    .menu a {
+        padding: 10px;
+        color: black;
+        opacity: 1;
+        font-size: 20px;
+        display: inline;
+    }
+
+    .content {
+        text-align: center;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        padding: 15px;
+    }
+    
+    
+}
