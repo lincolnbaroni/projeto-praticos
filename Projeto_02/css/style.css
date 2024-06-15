@@ -1,16 +1,19 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 html, body {
     height: 100%;
 }
 /*Divs gerais*/
-.conteiner {
+.container {
    width: 100%;
    max-width: 1200px;
    margin: 0 auto;
@@ -21,7 +24,7 @@ html, body {
 }
 
 header {
-    background-color: #D6D6D6;
+    background-color: rgb(190, 190, 190);
     padding: 10px 2% 30px 2%;
 }
 
@@ -62,6 +65,9 @@ section .cover-form {
 }
 
 .container-form {
+    z-index: 2;
+    box-shadow: 0px 0px 6px 1px black;
+    border-radius: 9px;
     margin-right: 40px;
     float: right;
     width: 400px;
@@ -72,10 +78,11 @@ section .cover-form {
 }
 
 .container-form h2 {
+    border-radius: 9px 9px 0px 0px;
     font-weight: normal;
-    background-color: rgb(234, 236, 239);
+    background-color: rgb(220, 220, 220);
     color: black;
-    padding: 20px 15px;
+    padding: 25px 15px;
     font-size: 18px;
 }
 
@@ -94,7 +101,7 @@ section .cover-form {
 }
 
 .form-wrapp:not(:first-child) {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .container-form form input[type=text] {
@@ -114,6 +121,34 @@ section .cover-form {
     font-size: 25px;
     cursor: pointer;
     border: 0;
+}
+
+.container-form form input[type=submit]:hover {
+    background-color: #022430;
+    opacity: 0.8;
+}
+
+section.chamada {
+    position: relative;
+    top: -52px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+section.chamada .container {
+    background-color: gray;
+    padding: 50px 0;
+}
+
+section.chamada h2 {
+    z-index: 1;
+    width: 96%;
+    max-width: 700px;
+    color: white;
+    display: inline-block;
+    font-size: 23px;
+    font-weight: normal;
 }
  
 @media screen and (max-width: 500px) {
