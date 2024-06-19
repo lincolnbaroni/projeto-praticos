@@ -55,25 +55,40 @@ section .cover-form {
     padding: 0 2%;
 }
 
+
 .bg {
+    position: relative;
     margin: 0 auto;
-    height: 520px;
+    height: 550px;
     max-width: 1200px;
     background-size: cover;
     background-position: center;
     background-image: url(../imagens/bg-form.jpg);
 }
 
+.arrow {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%);
+    background-image: url(../imagens/seta.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    
+}
+
 .container-form {
-    z-index: 2;
+    position: absolute;
+    top: -2%;
+    right: 30px;
     box-shadow: 0px 0px 6px 1px black;
     border-radius: 9px;
-    margin-right: 40px;
-    float: right;
     width: 400px;
-    height: 110%;
-    position: relative;
-    top: -5%;
+    height: 104%;
+
     background-color: white;
 }
 
@@ -129,26 +144,43 @@ section .cover-form {
 }
 
 section.chamada {
-    position: relative;
-    top: -52px;
+    z-index: 1;
     width: 100%;
     text-align: center;
-    display: inline-block;
 }
 
 section.chamada .container {
-    background-color: gray;
-    padding: 50px 0;
+    background-color: #c5dfe0;
+    padding: 55px 0;
+}
+
+section.chamada h1 {
+    width: 96%;
+    max-width: 700px;
+    color: black;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: normal;
 }
 
 section.chamada h2 {
-    z-index: 1;
-    width: 96%;
-    max-width: 700px;
-    color: white;
-    display: inline-block;
-    font-size: 23px;
+    font-size: 1em;
+    color: black;
     font-weight: normal;
+}
+
+@media screen and (max-width: 920px) {
+    .bg {
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .container-form {
+        display: inline-block;
+        position: static;
+        height: auto;
+    }
 }
  
 @media screen and (max-width: 500px) {
