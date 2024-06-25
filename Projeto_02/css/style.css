@@ -15,7 +15,7 @@ html, body {
 /*Divs gerais*/
 .container {
    width: 100%;
-   max-width: 1200px;
+   max-width: 1220px;
    margin: 0 auto;
 }
 
@@ -60,7 +60,7 @@ section .cover-form {
     position: relative;
     margin: 0 auto;
     height: 550px;
-    max-width: 1200px;
+    max-width: 1220px;
     background-size: cover;
     background-position: center;
     background-image: url(../imagens/bg-form.jpg);
@@ -150,8 +150,8 @@ section.chamada {
 }
 
 section.chamada .container {
-    background-color: #c5dfe0;
-    padding: 55px 0;
+    background-color: #b9d3d4;
+    padding: 70px 0;
 }
 
 section.chamada h1 {
@@ -167,6 +167,64 @@ section.chamada h2 {
     font-size: 1em;
     color: black;
     font-weight: normal;
+}
+
+
+.flex-mosaico {
+    padding: 6px 0;
+    display: flex;
+}
+
+.item-1-mosaico {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+}
+
+.item-2-mosaico {
+    color: white;
+    background-color: #13678A;
+    padding: 65px 40px;
+    width: 40%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #b9d3d4;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 130px;
+    padding: 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .flex-mosaico {
+        padding: 5px;
+        text-align: center;
+        display: block;
+        flex-direction: column;
+    }
+
+    .item-1-mosaico {
+        height: 350px;
+        width: 100%;
+    }
+    
+    .item-2-mosaico {
+        color: white;
+        background-color: #13678A;
+        padding: 40px 40px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 920px) {
@@ -186,6 +244,11 @@ section.chamada h2 {
 @media screen and (max-width: 500px) {
     header {
         text-align: center;
+    }
+
+    section.chamada .container {
+        background-color: #c5dfe0;
+        padding: 55px 25px;
     }
 
     [class^="logo"] {
