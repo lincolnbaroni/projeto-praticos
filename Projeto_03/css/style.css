@@ -47,6 +47,44 @@ header nav {
 
 nav.mobile-menu {
     display: none;
+    cursor: pointer;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/menu.png);
+    background-size: 100% 100%;
+}
+
+nav.mobile-menu:hover ul{
+    display: block;
+    transition: 1s;
+    opacity: 1;
+}
+
+nav.mobile-menu ul {
+    transition: 1s;
+    opacity: 0; 
+    background-color: white;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li {
+    padding: 8px 0;
+    border: 1px solid black;
+}
+
+nav.mobile-menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav.mobile-menu ul li:hover {
+    background-color: rgb(240, 240, 240);
 }
 
 header nav.desktop-menu ul {
@@ -122,6 +160,7 @@ section.chamada2 .container {
     float: left;
     width: 100%;
     font-size: 15px;
+    padding-left: 15px;
 }
 
 .btn1-text {
@@ -147,6 +186,59 @@ section.chamada2 .container {
     background-size: 100% 100%;
 }
 
+.sessao2 {
+    padding: 0px 2%;
+    background-color: white;
+    text-align: center;
+}
+
+.sessao2 h2 {
+    color: #5d298a;
+    font-weight: 300;
+}
+
+.sessao2 p {
+    margin-top: 30px;
+    max-width: 900px;
+    display: inline-block;
+}
+
+.sessao2 img {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.sessao2 .container {
+    max-width: 1000px;
+}
+
+@media screen and (max-width: 838px) {
+
+    .chamada1 {
+        text-align: center;
+        width: 100%;
+        float: none;
+        padding: 8px;
+        margin: 170px 0;
+    }
+
+    .chamada1 h2 {
+        font-weight: 300;
+        font-size: 2.4em;
+        color: white;
+        font-weight: normal;
+    }
+    
+    .chamada1 p {
+        margin-top: 25px;
+        color: white;
+    }
+
+    .device-sessao1 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     nav.desktop-menu {
@@ -158,8 +250,10 @@ section.chamada2 .container {
     }
 
     .chamada1 {
+        text-align: center;
         width: 100%;
         float: none;
+        padding: 8px;
         margin: 35px 0;
     }
     
@@ -171,6 +265,7 @@ section.chamada2 .container {
     }
     
     .chamada1 p {
+        margin-top: 25px;
         color: white;
     }
 
@@ -204,6 +299,10 @@ section.chamada2 .container {
 
     .btn1-text {
        display: inline-block;
+    }
+
+    .sessao2 {
+        padding-top: 60px 2%;
     }
 }
 
