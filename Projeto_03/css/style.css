@@ -116,6 +116,8 @@ header li a {
 }
 
 .chamada1 p {
+    font-size: 15px;
+    margin-top: 10px;
     color: white;
 }
 
@@ -128,6 +130,7 @@ header li a {
 
 section.chamada2 .container {
     max-width: 1200px;
+    height: calc(100% + 30px);
 }
 
 .texto-sessao1 {
@@ -180,7 +183,7 @@ section.chamada2 .container {
     top: -40px;
     float: left;
     width: 50%;
-    height: 440px;
+    height: 100%;
     background-image: url(../images/device.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -204,6 +207,8 @@ section.chamada2 .container {
 }
 
 .sessao2 img {
+    position: relative;
+    top: 120px;
     width: 100%;
     margin-top: 40px;
 }
@@ -212,26 +217,115 @@ section.chamada2 .container {
     max-width: 1000px;
 }
 
+.sessao3 {
+    width: 100%;
+}
+
+.wrapper-part1 {
+    max-width: 420px;
+    float: right;
+    padding-right: 30px;
+}
+
+.part1 {
+    color: white;
+    float: left;
+    width: 50%;
+    padding: 140px 0px 90px 0px; 
+    background-color: #835FA7;
+}
+
+.part1 h2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 23px;
+}
+
+.part1 p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.part2 {
+    float: left;
+    width: 50%;
+    padding: 140px 0px 90px 0px; 
+}
+
+.sobre-autor{
+    float: left;
+    max-width: 420px;
+    padding-left: 30px;
+}
+
+.titulo-autor {
+    float: left;
+    width: 100%;
+}
+
+.titulo-autor h2 {
+    float: left;
+    padding-right: 35px;
+}
+
+.titulo-autor .img-autor {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border-radius: 50%;
+    
+}
+
 @media screen and (max-width: 838px) {
 
+    header {
+        padding: 35px 2%;
+        width: 100%;
+        height: auto;
+    }
+
     .chamada1 {
-        text-align: center;
+        max-width: none;
         width: 100%;
         float: none;
-        padding: 8px;
+        padding: 0px 20px;
         margin: 170px 0;
     }
 
     .chamada1 h2 {
-        font-weight: 300;
-        font-size: 2.4em;
-        color: white;
-        font-weight: normal;
+        text-align: center;
     }
     
     .chamada1 p {
-        margin-top: 25px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    section.chamada2 {
+        text-align: center;
+    }
+
+    .texto-sessao1 {
+        text-align: center;
+        width: 100%;
+        float: none;
         color: white;
+        margin: 0;
+    }
+
+    .texto-sessao1 p {
+        float: none;
+    }
+
+    .texto-sessao1 ul li {
+        text-align: left;
+        float: none;
+    }
+
+    .texto-sessao1 ul {
+        display: inline-block;
     }
 
     .device-sessao1 {
@@ -301,8 +395,8 @@ section.chamada2 .container {
        display: inline-block;
     }
 
-    .sessao2 {
-        padding-top: 60px 2%;
+    .sessao2 .container {
+        padding-top: 80px 2%;
     }
 }
 
