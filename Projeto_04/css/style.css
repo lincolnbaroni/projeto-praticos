@@ -337,6 +337,97 @@ section.depoimentos .depoimento-single {
     font-size: 15px;
 }
 
+section.contato {
+    padding: 60px 2%;
+}
+
+section.contato h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 21px;
+}
+
+section.contato form {
+    margin: 35px auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-wrapper {
+    float: left;
+    padding: 0 8px;
+    margin-top: 10px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.form-wrapper label {
+    font-size: 13px;
+    color: #b4b4b4;
+}
+
+.form-wrapper .input {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 9px;
+}
+
+.form-wrapper textarea {
+    margin-top: 8px;
+    width: 100%;
+    padding: 15px;
+    height: 121px;
+    resize: none;
+    border: 1px solid #dadada;
+}
+
+.form-wrapper input[type=submit] {
+    width: 100px;
+    height: 35px;
+    border: 0px;
+    background-color: #688293;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+footer {
+    padding: 35px 5%;
+    background-color: #688293;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 900px;
+}
+
+footer .footer-block {
+    float: left;
+    width: 33.3%;
+}
+
+.footer-block h2 {
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.footer-block p {
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
 @media screen and (max-width: 1024px) {
     .img-mosaico-single-social {
         width: calc(100% / 6);
@@ -349,6 +440,12 @@ section.depoimentos .depoimento-single {
 }
 
 @media screen and (max-width: 768px) {
+
+    footer .footer-block {
+        float: none;
+        width: 100%;
+        margin: 30px 0;
+    }
 
     nav.menu-desktop {
         display: none;
@@ -430,7 +527,6 @@ section.depoimentos .depoimento-single {
         display: none;
     }
     
-    
 }
 
 @media screen and (max-width: 580px) {
@@ -446,4 +542,3 @@ section.depoimentos .depoimento-single {
       
     }
 }
-
