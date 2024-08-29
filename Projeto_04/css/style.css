@@ -166,18 +166,17 @@ section.perfil-container .perfil-wrapper2 {
     left: 0;
     top: 0;
     display: flex;
-    align-items: center;
     width: 100%;
     height: 100%;
 }
 
 section.perfil-container .container {
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 section.perfil-container .texto-perfil {
     width: 60%;
-    padding: 0 15px;
+    padding: 20px 15px;
 }
 
 section.perfil-container .img-perfil {
@@ -189,13 +188,14 @@ section.perfil-container .img-perfil {
 
 section.perfil-container .texto-perfil h2 {
     color: #698293;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 section.perfil-container .texto-perfil p {
-    color: #4b4b4b;
-    font-size: 15px;
+    color: rgb(190, 190, 190);
+    font-size: 16px;
     margin-top: 10px;
+    line-height: 25px;
 }
 
 section.videos .box-video {
@@ -318,7 +318,10 @@ section.depoimentos .depoimento-single {
     float: left;
     width: calc(100% / 9);
     padding-top: calc(100% / 9);
-    background-color: blue;
+    background-image: url(../imagens/odonto.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
     border: 6px solid white;
 }
 
