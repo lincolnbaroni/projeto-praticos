@@ -203,23 +203,61 @@ section.veiculos-destaque .line-titulo h2 {
     font-style: italic;
 }
 
-.veiculos-vitrini a {
-    margin-top: 15px;
+.btn1 {
     background-color: #EB2D2D;
-    color: white;
-    border-radius: 8px;
     border-bottom: 5px solid #B21E1E;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
-    font-style: italic;
-    margin-left: 8px;
-    width: 153px;
     line-height: 45px;
     display: block;
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+    width: 153px;
+    border-radius: 8px;
 }
 
+.veiculos-vitrini a {
+    margin-top: 15px;
+    margin-left: 8px; 
+}
 
+.half1 {
+    text-align: center;
+    float: left;
+    width: 50%;
+    padding: 90px 0;
+    background-color: #242424;
+    color: white;
+}
+
+.half1-wrapper {
+    text-align: left;
+    display: inline-block;
+}
+
+.half1-wrapper h2 {
+    font-weight: normal;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.half1-wrapper ul {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.half1-wrapper li {
+    margin-left: 15px;
+    line-height: 30px;
+}
+
+.half1-wrapper a {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 50px;
+}
+ 
 @media screen and (max-width: 1400px) {
     section.banner {
         background-size: 90% auto;
@@ -230,9 +268,18 @@ section.veiculos-destaque .line-titulo h2 {
 @media screen and (max-width: 1024px) {
     section.banner {
         background-size: cover;
-        background-position: center;
+        background-position: 100px center;
         height: 70vw;
         min-height: 700px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .half1-wrapper a {
+        display: block;
+        margin-left: 0;
+        margin-top: 20px;
+        
     }
 }
 
