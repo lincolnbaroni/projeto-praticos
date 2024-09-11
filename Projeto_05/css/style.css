@@ -222,9 +222,12 @@ section.veiculos-destaque .line-titulo h2 {
     margin-left: 8px; 
 }
 
+.servico-descricao {
+    display: flex;
+}
+
 .half1 {
-    text-align: center;
-    float: left;
+    text-align: right;
     width: 50%;
     padding: 90px 0;
     background-color: #242424;
@@ -232,6 +235,7 @@ section.veiculos-destaque .line-titulo h2 {
 }
 
 .half1-wrapper {
+    padding-right: 30%;
     text-align: left;
     display: inline-block;
 }
@@ -257,11 +261,72 @@ section.veiculos-destaque .line-titulo h2 {
     vertical-align: bottom;
     margin-left: 50px;
 }
+
+.half2 {
+    width: 50%;
+    padding: 90px 100px;
+    background-color: #EB2D2D;
+    color: white;
+}
+
+.half2 h2 {
+    font-weight: normal;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.half2 .depoimento-single {
+    margin-top: 19px;
+}
+
+.depoimento-single p {
+    font-size: 20px;
+
+}
+
+.navigation {
+    width: 100%;
+    max-width: 700px;
+    float: left;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.navigation img {
+    margin: 0 20px;
+}
+
+.arrows {
+    float: left;
+}
+
+.nome-depoimento {
+    float: right;
+    color: #252525;
+    font-size: 20px;
+}
  
 @media screen and (max-width: 1400px) {
     section.banner {
         background-size: 90% auto;
         background-position: 200% 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .half1 {
+        text-align: center;
+    }
+
+    .half1-wrapper {
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .half1-wrapper a {
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
     }
 }
 
@@ -284,6 +349,16 @@ section.veiculos-destaque .line-titulo h2 {
 }
 
 @media screen and (max-width: 700px) {
+
+    .servico-descricao {
+        flex-direction: column;
+    }
+
+    .half1, .half2 {
+        width: 100%;
+    }
+
+
     nav.desktop {
         display: none;
     }
