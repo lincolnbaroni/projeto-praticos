@@ -24,7 +24,6 @@ section.header-principal {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    border: 1px solid white;
     height: 550px;
 }
 
@@ -89,6 +88,7 @@ header nav ul li a {
 }
 
 .banner h2 {
+    padding-right: 250px;
     margin-top: 80px;
     display: flex;
     align-items: center;
@@ -96,26 +96,62 @@ header nav ul li a {
     color: white;
     font-style: italic;
     font-size: 33px;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+section.header-principal .container {
+    max-width: 800px;
+    position: relative;
+    top: 95px;
+
 }
 
 .banner-image {
-    position: relative;
-    top: 150px;
     display: flex;
+    align-self: center;
     justify-content: center;
 }
 
-.banner-image img {
-    width: 250px;
-    border-radius: 20px;
-    padding: 0 10px;
+.banner-image .image {
+    padding: 5px;
+}
+
+.banner-image .image:nth-of-type(1) img,
+.banner-image .image:nth-of-type(3) img {
+    width: 230px;
+}
+
+.banner-image .image:nth-of-type(2) img {
+    width: 260px;
+    position: relative;
+    top: -10px;
+    
 }
 
 .banner-image .image img:hover {
-    transform: translate(40px 20px);
-    translate: (40px 20px);
-    transition-duration: 2s;
+    transform: scale(1.1);
+}
+
+.banner-image .image img {
+    display: block;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px;
+    transition:  transform 0.3s ease-in-out;
+}
+
+section.header-principal .container .banner-image .image:nth-of-type(1) {
+    width: 250px;
+    
+}   
+
+section.header-principal > .banner-image .image img:nth-of-type(2) {
+    width: 360px;
+    
+}
+
+section.header-principal > .banner-image .image:nth-of-type(3) {
+    width: 250px;
     
 }
 
