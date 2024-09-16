@@ -8,8 +8,14 @@
     font-family: "Montserrat", sans-serif;
 }
 
+:root {
+    --cor1: #040638;
+    --cor2: #024059;
+    --cor3: #025E73;
+    --cor4: #0BADBF;
+}
+
 .container {
-    max-width: 1800px;
     width: 100%;
     margin: 0 auto;
 }
@@ -142,17 +148,14 @@ section.header-principal .container {
 
 section.header-principal .container .banner-image .image:nth-of-type(1) {
     width: 250px;
-    
 }   
 
 section.header-principal > .banner-image .image img:nth-of-type(2) {
-    width: 360px;
-    
+    width: 360px; 
 }
 
 section.header-principal > .banner-image .image:nth-of-type(3) {
     width: 250px;
-    
 }
 
 .info {
@@ -179,8 +182,8 @@ section.info1 p {
 main .servico {
     background-color: #FFFFFF;
     width: 100%;
-    max-width: 1100px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 main .servico .servico-lista h2 {
@@ -199,6 +202,7 @@ main .servico .servico-lista p {
 
 main .servico-lista .servico-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -217,7 +221,7 @@ main .servico-wrapper .single-2 {
 }
 
 main .servico-lista .servico-wrapper .servico-single {
-    width: 250px;
+    width: 240px;
     text-align: center;
     border: 1px solid #004F92;
     border-radius: 15px;
@@ -232,7 +236,15 @@ main .servico-wrapper .servico-single p {
 }
 
 
-
 main .servico .servico-lista img {
-    width: 130px;
+    width: 110px;
+}
+
+main .servico .servico-single:hover {
+    transition: 0.7s;
+    background-color: var(--cor2);
+}
+
+main .servico .servico-single:hover p {
+    color: white;
 }
