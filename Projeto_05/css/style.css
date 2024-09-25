@@ -335,14 +335,6 @@ section.contato form .input-wrapper:nth-of-type(5) {
     text-align: center;
 }
 
-.w100 {
-    width: 100%;
-}
-
-.w50 {
-    width: 50%;
-}
-
 section.contato textarea {
     width: 100%;
     border: 1px solid #ccc;
@@ -358,7 +350,62 @@ section.contato input[type=submit] {
     cursor: pointer;
     display: inline-block;
 }
- 
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+footer {
+    padding: 40px 2%;
+    background-color: #252525;
+} 
+
+footer nav {
+    float: left;
+}
+
+footer p {
+    float: right;
+    color: white;
+    font-size: 19px;
+    font-style: italic;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav ul li {
+    padding: 0 30px;
+    font-size: 19px;
+    float: left;
+    font-style: italic;
+}
+
+footer nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+section.venda {
+    padding: 90px 0;
+    min-height: 100%;
+}
+
+.content-venda {
+    margin-top: 30px;
+}
+
+.seide-bar {
+    float: left;
+    width: 30%;
+}
+
+
 @media screen and (max-width: 1400px) {
     section.banner {
         background-size: 90% auto;
@@ -402,6 +449,18 @@ section.contato input[type=submit] {
 }
 
 @media screen and (max-width: 700px) {
+
+    footer nav {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer p {
+        float: none;
+    }
 
     .w50 {
         width: 100%;
