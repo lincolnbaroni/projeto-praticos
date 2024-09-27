@@ -26,7 +26,7 @@ body,html {
 }
 
 section.header-principal {
-    background-image: url(../imagens/back-3.jpg);
+    background-image: url(../imagens/background-2.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -179,11 +179,15 @@ section.info1 p {
     margin-bottom: 15px;
 }
 
+main .container {
+    box-shadow: 2px 2px 2px black;
+}
+
 main .servico {
     background-color: #FFFFFF;
     width: 100%;
     margin: 0 auto;
-    cursor: pointer;
+
 }
 
 main .servico .servico-lista h2 {
@@ -206,19 +210,17 @@ main .servico-lista .servico-wrapper {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    box-shadow: 20px 20px 20px black;
 }
 
-main .servico-wrapper .single-1 {
+main .servico-wrapper .single-1, .single-2 {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
-main .servico-wrapper .single-2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 main .servico-lista .servico-wrapper .servico-single {
     width: 240px;
