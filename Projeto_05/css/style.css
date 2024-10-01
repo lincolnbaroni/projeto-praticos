@@ -432,7 +432,7 @@ section.venda {
     top: 0;
     width: 30%;
     height: 20px;
-    background-color: rgb(200, 200, 200);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200,200,200));
 }
 
 .pointer-barra {
@@ -442,7 +442,7 @@ section.venda {
     width: 26px;
     height: 26px;
     border-radius: 8px;
-    background-color: rgb(210, 210, 210);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(160,160,160));
     border-radius: 8px;
     border: 1px solid black;
     cursor: pointer;
@@ -483,6 +483,10 @@ section.venda {
     display: none;
 }
 
+.form-venda-wraper input[type=checkbox]:checked + label > .circle {
+    display: block;
+}
+
 .form-venda-wraper label {
     width: 20px;
     height: 20px;
@@ -490,12 +494,29 @@ section.venda {
     display: inline-block;
     border-radius: 3px;
     cursor: pointer;
+    position: relative;
+}
+
+.circle {
+    display: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: black;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
 .form-venda-wraper span {
     padding: 0 10px;
     display: inline-block;
     vertical-align: top;
+}
+
+.vitrine-vendas {
+    float: right;
+    width: 70%;
 }
 
 @media screen and (max-width: 1400px) {
