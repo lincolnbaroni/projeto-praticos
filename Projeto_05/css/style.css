@@ -400,13 +400,13 @@ section.venda {
     margin-top: 30px;
 }
 
-.seide-bar {
+.side-bar {
     float: left;
     width: 30%;
 }
 
 .search1 {
-    width: 300px;
+    width: 90%;
 }
 
 .search1 h2 {
@@ -437,7 +437,7 @@ section.venda {
 
 .pointer-barra {
     position: absolute;
-    left: calc(100% - 13px);
+    left: calc(90% - 13px);
     top: -5px;
     width: 26px;
     height: 26px;
@@ -476,7 +476,7 @@ section.venda {
 }
 
 .form-venda-wraper {
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .form-venda-wraper input[type=checkbox] {
@@ -517,6 +517,10 @@ section.venda {
 .vitrine-vendas {
     float: left;
     width: 70%;
+}
+
+.vitrine-vendas .veiculos-vitrini{
+	margin-top:20px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -598,6 +602,25 @@ section.venda {
 
     .text-banner {
         padding: 150px 40px;
+    }
+
+    .side-bar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search1 {
+        display: inline-block;
+    }
+
+    .search2 {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .vitrine-vendas {
+        text-align: center;
+        width: 100%;
     }
 }
 
