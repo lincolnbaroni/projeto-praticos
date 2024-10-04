@@ -150,7 +150,7 @@ section.veiculos-destaque .container {
 }
 
 .line-titulo {
-    max-width: 1000px;
+    max-width: 1064px;
     margin: 0 auto;
     position: relative;
     text-align: center;
@@ -522,6 +522,44 @@ section.venda {
 .vitrine-vendas .veiculos-vitrini{
 	margin-top:20px;
 }
+
+section.venda-single {
+    padding: 0 2%;
+}
+
+section.venda-single .container {
+    max-width: 1260px;
+    padding: 65px 0;
+}
+
+.info-veiculo {
+    float: left;
+    width: 60%;
+}
+
+.foto-destaque {
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.descricao-veiculo {
+    padding: 20px;
+    float: left;
+    width: 40%;
+}
+
+.descricao-veiculo p {
+    max-width: 380px;
+    margin-top: 25px;
+}
+
+.descricao-veiculo a {
+    margin-top: 25px;
+}
+
 
 @media screen and (max-width: 1400px) {
     section.banner {
