@@ -532,7 +532,7 @@ section.venda-single {
 section.venda-single .container {
     text-align: center;
     max-width: 1200px;
-    padding: 65px 0;
+    padding: 65px 0 0 0;
 }
 
 .info-veiculo {
@@ -552,6 +552,7 @@ section.venda-single .container {
     text-align: left;
     vertical-align: top;
     padding: 20px;
+    margin-top: 30px;
     display: inline-block;
 }
 
@@ -624,14 +625,20 @@ section.venda-single .container {
     width: 210%;
 }
 
-.mini-img {
-    cursor: pointer;
-    border: 5px solid white;
+.mini-img-wraper {
+    padding: 9px;
     float: left;
+    width: calc(33.3% * (100 / 200));
+}
+
+.mini-img {
+    padding-top: 70%;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
     background-position: center;
     background-size: cover;
-    padding-top: calc(33.3% * (100 / 200) * 0.5);
-    width: calc(33.3% * (100 / 200));
+    
 }
 
 
@@ -733,6 +740,22 @@ section.venda-single .container {
     .vitrine-vendas {
         text-align: center;
         width: 100%;
+    }
+
+    .info-veiculo {
+        width: 100%;
+    }
+
+    .descricao-veiculo {
+        text-align: center;
+    }
+
+    .descricao-veiculo a {
+        display: inline-block;
+    }
+
+    .descricao-veiculo p {
+        max-width: 450px;
     }
 }
 
