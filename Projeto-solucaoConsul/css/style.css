@@ -8,6 +8,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
 :root {
     --cor1: #040638;
     --cor2: #024059;
@@ -218,9 +222,7 @@ main .servico-wrapper .single-1, .single-2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
-
 
 main .servico-lista .servico-wrapper .servico-single {
     width: 240px;
@@ -249,4 +251,56 @@ main .servico .servico-single:hover {
 
 main .servico .servico-single:hover p {
     color: white;
+}
+
+.encontro {
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encontro .texto-principal {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.encontro .texto-principal .texto1 {
+    margin-right: 45px;
+    max-width: 750px;
+    width: 60%;
+    color: white;
+}
+
+.encontro .texto1 input[type=submit] {
+    margin-top: 50px;
+    width: 200px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.encontro .img-encontro {
+    width: 40%;
+}
+
+.img-encontro img {
+    max-width: 500px;
+    border-radius: 8px 35px 30px 8px;
+}
+
+.texto-principal .texto1 h2 {
+    font-size: 27px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.texto-principal .texto1 p {
+    font-size: 19px;
+    line-height: 30px;
 }
