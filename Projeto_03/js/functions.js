@@ -9,10 +9,29 @@ window.onload = function() {
             MapTypeId:google.maps.MapTypeId.ROADMAP
         }
 
-        map = new google.maps.Map(document.getElementById("mapa"),mapProp )
+        map = new google.maps.Map(document.getElementById("mapa"),mapProp)
+
+        function addMarker(lat,long,icon,content) {
+            let latLng = {'lat':lat, 'long':long}
+
+            let marker = new google.maps.Marker({
+                position:latLng,
+                map:map,
+                icon:icon
+            })
+
+            let infoWindow = new google.maps.InfoWindow({
+                content:content,
+                maxWidth:200,
+                pixlOffset: new google.maps.Size(0,20)
+            })
+
+            infoWindow.open(map,marker)
+        }
     }
 
     initialize()
+    addMarker()
 
     
 }
