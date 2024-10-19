@@ -10,27 +10,49 @@ window.onload = function() {
         }
 
         map = new google.maps.Map(document.getElementById("mapa"),mapProp)
-
+        
+        
         function addMarker(lat,long,icon,content) {
-            let latLng = {'lat':lat, 'long':long}
+            let latLng = {'lat':lat, 'lng':long}
 
-            let marker = new google.maps.Marker({
+            let marker = new google.maps.marker({
                 position:latLng,
                 map:map,
-                icon:icon
+                icon:icon,
             })
 
-            let infoWindow = new google.maps.InfoWindow({
+            let infoWindow = new google.mps.infoWindow({
                 content:content,
                 maxWidth:200,
-                pixlOffset: new google.maps.Size(0,20)
+                pixelOffset: new google.maps.Size(0,20)
             })
+
+            google.maps.event.addListener(marker)
 
             infoWindow.open(map,marker)
         }
+            
     }
 
     initialize()
+
+    addMarker(-27.616637,-48.5923228, '', 'Meu endereço personalizado')
+
+    map.panTo({'lat':-19.575670, 'lgn':-42.642639});
+
+    /*
+    function animal() {
+        this.nome = "Nina"
+        this.raça = "SRD"
+        this.sexo = "Macho"
+
+        this.outraVariavel = "teste"
+    }
+
+    let meuAnimal = new animal()
+    console.log(meuAnimal.outraVariavel)
+    */
+
     addMarker()
 
     
