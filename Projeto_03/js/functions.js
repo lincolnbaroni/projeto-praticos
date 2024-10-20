@@ -15,7 +15,7 @@ window.onload = function() {
         function addMarker(lat,long,icon,content) {
             let latLng = {'lat':lat, 'lng':long}
 
-            let marker = new google.maps.marker({
+            let marker = new google.maps.Marker({
                 position:latLng,
                 map:map,
                 icon:icon,
@@ -27,9 +27,11 @@ window.onload = function() {
                 pixelOffset: new google.maps.Size(0,20)
             })
 
-            google.maps.event.addListener(marker)
+            google.maps.event.addListener(marker, 'click', function() {
+                infoWindow.open(map, maker)
+            })
 
-            infoWindow.open(map,marker)
+            InfoWindow.open(map,marker)
         }
             
     }
@@ -39,19 +41,6 @@ window.onload = function() {
     addMarker(-27.616637,-48.5923228, '', 'Meu endereço personalizado')
 
     map.panTo({'lat':-19.575670, 'lgn':-42.642639});
-
-    /*
-    function animal() {
-        this.nome = "Nina"
-        this.raça = "SRD"
-        this.sexo = "Macho"
-
-        this.outraVariavel = "teste"
-    }
-
-    let meuAnimal = new animal()
-    console.log(meuAnimal.outraVariavel)
-    */
 
     addMarker()
 

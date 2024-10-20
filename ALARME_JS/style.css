@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+
+.container {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(115, 115, 255);
+    color: white;
+    font-size: 22px;
+    padding: 8px 22px;
+    margin-top: 20px;
+    border: 0;
+    display: block;
+    margin: 11px auto;
+    
+}
