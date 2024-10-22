@@ -14,26 +14,26 @@ for(let i = 0; i <= 60; i++) {
     minutos.innerHTML+= '<option value="'+i+'">'+i+'</option>';
 }
 
-for(let i = 0; i <= 60; i++) {
+for(let i = 1; i <= 60; i++) {
     segundos.innerHTML+= '<option value="'+i+'">'+i+'</option>';
 }
 
 comecar.addEventListener('click', function() {
     minutoAtual = parseInt(minutos.value)
-    segundoAtual = parseInt(seundos.value)
+    segundoAtual = parseInt(segundos.value)
 
     display.childNodes[1].innerHTML = minutoAtual + ":" + segundoAtual
 
     interval = setInterval(function(){
 
         segundoAtual--
-        if(segundoAtual <=0) {
+        if(segundoAtual < 0) {
             if(minutoAtual > 0) {
                 minutoAtual--
                 segundoAtual = 59
             } else {
                 alert("Acabou")
-                document.getElementsById('sound').play()
+                document.getElementById('sound').play()
                 clearInterval(interval)
             } 
         }
