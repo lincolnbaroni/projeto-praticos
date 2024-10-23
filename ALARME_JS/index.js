@@ -3,8 +3,6 @@ let minutos = document.getElementById('minutos')
 let segundos = document.getElementById('segundos')
 let comecar = document.getElementById('comecar')
 
-let cronometroSeg
-
 let minutoAtual
 let segundoAtual
 
@@ -15,12 +13,13 @@ for(let i = 0; i <= 60; i++) {
 }
 
 for(let i = 1; i <= 60; i++) {
-    segundos.innerHTML+= '<option value="'+i+'">'+i+'</option>';
+    segundos.innerHTML+= '<option value='+i+'>'+i+'</option>'
 }
 
 comecar.addEventListener('click', function() {
     minutoAtual = parseInt(minutos.value)
     segundoAtual = parseInt(segundos.value)
+
 
     display.childNodes[1].innerHTML = minutoAtual + ":" + segundoAtual
 
