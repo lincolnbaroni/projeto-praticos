@@ -39,7 +39,8 @@ section.header-principal {
 
 header .img {
     position: relative;
-    top: 0;
+    top: 15px;
+    left: 50px;
     width: 170px;
     height: 60px;
 }
@@ -105,8 +106,8 @@ header nav ul li a {
     justify-content: center;
     color: white;
     font-style: italic;
-    font-size: 33px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 700;
 }
 
 section.header-principal .container {
@@ -174,13 +175,26 @@ section.info1 {
     padding: 30px;
     background-color: #040638;
 }
+section.info1 h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 15px 0;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
 
 section.info1 p {
     margin-top: 15px;
     line-height: 25px;
     text-align: justify;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+section.info1 .btt {
+    border-radius: 20px;
+    margin-left: 15px;
 }
 
 main .container {
@@ -209,12 +223,13 @@ main .servico .servico-lista p {
 }
 
 main .servico-lista .servico-wrapper {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    box-shadow: 20px 20px 20px black;
+    box-shadow: 2px 2px 6px black
 }
 
 main .servico-wrapper .single-1, .single-2 {
@@ -253,7 +268,8 @@ main .servico .servico-single:hover p {
     color: white;
 }
 
-.encontro {
+section.encontro {
+    background-color: var(--cor1);
     padding: 90px;
     display: flex;
     justify-content: center;
@@ -274,7 +290,7 @@ main .servico .servico-single:hover p {
     color: white;
 }
 
-.encontro .texto1 input[type=submit] {
+.btt {
     margin-top: 50px;
     width: 200px;
     height: 45px;
