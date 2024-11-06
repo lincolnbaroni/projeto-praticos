@@ -30,11 +30,11 @@ body,html {
 }
 
 section.header-principal {
-    background-image: url(../imagens/background-2.jpg);
+    background-image: url(../imagens/fundo-consultoria-einstein-1.jpg.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    height: 550px;
+    height: 650px;
 }
 
 header .img {
@@ -75,7 +75,6 @@ header nav ul li a {
 
 
 .header1 nav ul li a:hover {
-    font-weight: 600;
     color: black;
     transition-duration: 0.5s;
     background-color: white;
@@ -101,13 +100,17 @@ header nav ul li a {
 .banner h2 {
     padding-right: 250px;
     margin-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 150px;
+    max-width: 770px;
     color: white;
     font-style: italic;
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.banner hr {
+    margin-top: 15px;
+    width: 690px;
 }
 
 section.header-principal .container {
@@ -169,19 +172,33 @@ section.header-principal > .banner-image .image:nth-of-type(3) {
 }
 
 section.info1 {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
-    max-width: 1100px;
     width: 100%;
-    padding: 30px;
+    padding: 30px 40px;
     background-color: #040638;
 }
-section.info1 h2 {
+
+.container .info h2 {
     color: white;
     font-weight: 600;
     font-size: 30px;
-    padding: 15px 0;
-    margin-left: 15px;
+    padding: 15px 20px;
     text-transform: uppercase;
+    text-align: left;
+}
+
+section.info1 .info-single {
+    max-width: 590px;
+    width: 100%;
+    margin-right: 200px;
+}
+
+section.info1 .img-info img {
+    border-radius: 8px 30px 30px 8px;
+    max-width: 590px;
+    width: 100%;
 }
 
 section.info1 p {
@@ -195,10 +212,6 @@ section.info1 p {
 section.info1 .btt {
     border-radius: 20px;
     margin-left: 15px;
-}
-
-main .container {
-    box-shadow: 2px 2px 2px black;
 }
 
 main .servico {
@@ -319,4 +332,33 @@ section.encontro {
 .texto-principal .texto1 p {
     font-size: 19px;
     line-height: 30px;
+}
+
+.input-contatos {
+    width: 100%;
+    padding: 80px 80px;
+}
+
+.input-contatos h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 27px;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.input-contatos p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 25px; 
+}
+
+.input-contatos .form {
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    max-width: 550px;
 }
