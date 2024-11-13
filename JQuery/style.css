@@ -6,10 +6,13 @@
     box-sizing: border-box;
 }
 
-.artigo1 {
-    background-color: rgb(210, 210, 210);
+html,body {
+    height: 100%;
 }
 
-.artigo2 {
-    background-color: rgb(150, 150, 150);
+.box {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    background-color: #ccc;
 }
