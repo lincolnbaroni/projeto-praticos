@@ -357,8 +357,65 @@ section.encontro {
 }
 
 .input-contatos .form {
+    padding: 50px 30px;
     margin: 0 auto;
+    border-radius: 8px;
     background-color: white;
     color: black;
-    max-width: 550px;
+    width: 100%;
+    max-width: 750px;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.input-contatos .form-wrapper {
+    float: left;
+    padding: 10px 2%;
+}
+
+.input-contatos .input {
+    border-radius: 8px;
+    border: 1px solid var(--cor2);
+    padding: 5px;
+    font-size: 13px;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    margin: 8px 0;
+}
+
+.input-contatos .form > label {
+    font-size: 15px;
+}
+
+.input-contatos .form textarea {
+    padding: 10px;
+    width: 100%;
+    height: 220px;
+    margin-top: 10px;
+    resize: none;
+}
+
+.input-contatos .form .btt {
+    margin-top: 7px;
+    width: 150px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.input-contatos .form .btt:hover {
+    background-color: var(--cor2);
+    color: white;
+    transition-duration: 0.4s;
+    transform: scale(1.1, 1.2);
 }
