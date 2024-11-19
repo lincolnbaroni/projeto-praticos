@@ -360,11 +360,12 @@ section.encontro {
     padding: 50px 30px;
     margin: 0 auto;
     border-radius: 8px;
-    background-color: white;
+    background-color: rgb(300, 300, 300, 0.5);
     color: black;
     width: 100%;
     max-width: 750px;
 }
+
 
 .w50 {
     width: 50%;
@@ -418,4 +419,86 @@ section.encontro {
     color: white;
     transition-duration: 0.4s;
     transform: scale(1.1, 1.2);
+}
+
+.info_comple {
+    background-color: white;
+    padding: 60px 90px;
+    text-align: center;
+}
+
+.info_comple .titulo {
+    max-width: 1290px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.info_comple .ln {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+}
+
+.info_comple h2 {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 0 2%;
+    font-size: 30px;
+    color: var(--cor2);
+    font-style: italic;
+}
+
+.info_comple p {
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.info_comple> .btt {
+    margin-top: 5px;
+    width: 250px;
+}
+
+.footer-principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 80px 90px;
+}
+
+.footer-principal .footer-img img {
+    width: 200px;
+    height: 80px;
+    margin-bottom: 12px;
+}
+
+.footer-principal .footer-1 {
+    text-align: left;
+    max-width: 560px;
+    width: 100%;
+}
+
+.footer-principal .footer-1 p {
+    max-width: 460px;
+    color: white;
+    font-size: 17px;
+    padding: 9px 0;
+}
+
+.footer-principal .footer-1 .img-redes img {
+    width: 36px;
+    margin-top: 20px;
+}
+
+.footer-principal .footer-1 .img-redes img:hover {
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+    transition-duration: 0.4s;
 }
