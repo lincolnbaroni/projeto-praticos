@@ -466,8 +466,9 @@ section.encontro {
 }
 
 .footer-principal {
+    background-color: #222222;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding: 80px 90px;
@@ -501,4 +502,36 @@ section.encontro {
     cursor: pointer;
     transform: scale(1.1,1.1);
     transition-duration: 0.4s;
+}
+
+.footer-principal .footer-2 {
+    display: flex;
+    color: white;
+}
+
+.footer-2-single-1 {
+    padding: 0 2%;
+}
+
+.footer-2-single-1, .footer-2-single-2 h2 {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.footer-2-single-1 ul {
+    list-style: none;
+}
+
+.footer-2-single-1 ul li {
+    padding: 5px;
+}
+
+.footer-2-single-1 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-2-single-1 ul li a:hover {
+    opacity: 0.5;
 }
