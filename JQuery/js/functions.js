@@ -1,5 +1,3 @@
-$(function() {
-    $(window).scroll(function() {
-        console.log('scroll ativo')
-    })
+$(window).on('load',function() {
+    let elWidth = $('.box').width()
 })
