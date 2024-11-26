@@ -1,12 +1,14 @@
 $(window).on('load',function() {
    
-   //let elWidth = $('.box').width()
-   $('.box').width('900')
-   $('.box').css('width','900px')
-   console.log("Width: "+ $('.box').width())
-  
-    console.log("InnerWidth: " + $('.box').innerWidth())
-    console.log("OuterWidth: " + $('.box').outerWidth(true))
+  let el = $('.box')
 
+  let meutexto = 'Ola mundo'
+  el.html("<div class=\"teste\">"+meutexto+"</div>")
+
+  el.html(el.html() + '<h1 class="texto1">Meu primeiro texto dinamico</div>')
+
+    $('.box2').text("<div></div>")
+    $('.box2').text($('.box2').text() + "Ola mundo!!")
+    console.log(el.text())
 
 })
