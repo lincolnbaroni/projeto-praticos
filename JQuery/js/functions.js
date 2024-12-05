@@ -1,32 +1,19 @@
 $(document).ready(function() {
 
-  /*
-  let v = $('.box')
-  let texto = 'ola mundo'
-  v.html("<div class=\"test1\">"+texto+"</div>")
+  //$('.box div').append('<h3>Meu elemento adicionado</h3>')
 
-  v.html(v.html()+ '<h1 class="texto1">Meu texto via JavaScript</div>')
+  //let el = $('<h3>Meu conteudo</h3>').appendTo($('.box'))
+  //el.css('color','red')
 
-  $('.box2').text('<div></div>')
-  $('.box2').text($('.box2').text() + 'ola mundo')
+  //$('.box').prepend('<h3> meu conteudo 1 </h3>')
+  //let el = $('<h3> meu conteudo </h3>').prependTo($('.box'))
+  //el.css('font-size','30px')
 
-  console.log($('.box2').text())
+let t = ('<p>Meu conteudo depois da variavel</p>')
+ // $('.box').after(t)
 
-  $('input[type=text]').val('ola mundo')
-  $('textarea').text('ola mundo')
-  */
+ // $('.box').before(t)
 
-  $('input[type=button]').click(function() {
-    let v = $('input[type=text]').val()
-    //let v2 = v.split('@')
-    //console.log(v2)
-
-    let splitstr = v.split('@')
-    if(splitstr[1] == 'hotmail.com') {
-      $('input[type=text]').css('opacity','0')
-    } else {
-      console.log('condição não foi valida')
-    }
-  })
-
+$(t).insertAfter($('.box')).css('color','red')
+$(t).insertBefore($('.box')).css('color','red')
 }) 
