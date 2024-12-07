@@ -9,13 +9,3 @@
 html,body {
     height: 100%;
 }
-
-.box {
-    width: 100%;
-    padding: 20px;
-    background: #ccc;
-}
-
-h1.texto1 {
-    color: red;
-}
