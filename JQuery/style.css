@@ -16,9 +16,14 @@ html,body {
     background-color: rgb(210, 210, 210);
     color: black;
     text-align: center;
+    transition: 2s;
 }
 
 .box2 {
     background-color: black;
     color: white;
+}
+
+.minhaClasse {
+    color: red;
 }
