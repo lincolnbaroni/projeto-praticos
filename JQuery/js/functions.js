@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
-   let el = $('#source .texto').clone()
-   console.log(el)
+  $.ajax({
+   'url':'conteudo.html',
+   // 'method':'post',
+   // data:{'nome':'lincoln','idade':'26'}
+
+  }).done(function(data){
+      $('#container').append(data)
+  })
+
 })  
