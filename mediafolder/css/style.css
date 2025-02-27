@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
