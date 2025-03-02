@@ -131,3 +131,34 @@ nav .active a, nav a:hover {
     margin: 20px 0;
     font-size: 15px;
 }
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral main {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget_title {
+    margin: 20px 0 20px 0;
+}
+
+.widget_title_text {
+    color: #000000;
+    font-size: 20 px;
+    font-weight: bold;
+}
+
+.widget_title_bar {
+    width: 60px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+
+}
