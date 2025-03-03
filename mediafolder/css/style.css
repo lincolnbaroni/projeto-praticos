@@ -16,7 +16,7 @@ header {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 900px;
+    width: 1000px;
     
 }
 
@@ -55,7 +55,8 @@ nav .active a, nav a:hover {
     display: flex;
     justify-content: center;
     background-image: url(../images/img1.jpg);
-    background-position: center;
+    background-position: top;
+    background-size: cover;
     height: 670px;
 }
 
@@ -160,5 +161,148 @@ nav .active a, nav a:hover {
     height: 2px;
     background-color: #36a9e1;
     margin-top: 10px;
+}
 
+aside .widget_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+aside .widget_body .widgetbox {
+    background-color: #39AAE1;
+    max-width: 140px;
+    width: 100%;
+    height: 140px;
+    margin-bottom: 15px;
+}
+
+aside .widget_body p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+aside .line {
+    background-color: #ccc;
+    width: 100%;
+    height: 2px;
+}
+
+aside .widget_box_item {
+    width: 100%;
+}
+
+aside .item1 {
+    display: flex;
+    text-align: left;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .news_data {
+    display: flex;
+}
+
+article .news_posted_at {
+    background-color: #2b4c99;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 3px;
+}
+
+article .news_coments {
+    background-color: #39aae1;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .news_thumbnail {
+    margin-top: 30px;
+}
+
+article .news_thumbnail img{
+    width: 100%;
+}
+
+article .news_title {
+    margin: 25px 0 25px 0;
+    font-size: 23px;
+    color: black;
+}
+
+article .news_resume {
+    line-height: 23px;
+    color: #5c5c5c;
+    font-size: 14px;
+    margin-bottom: 30px;
+} 
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer_menu {
+    display: flex;
+}
+
+footer .fm1, .fm2, .fm3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+
+.fm1 {
+    background-color: #39aae1;
+}
+
+.fm2 {
+    background-color: #0079c7;
+}
+
+.fm3 {
+    background-color: #2b4c99;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.footer_area {
+    display: flex;
+}
+
+.footer_areaitem {
+    flex: 1;
+    color: white;
+}
+
+footer .widget_title_text {
+    color: white;
+}
+
+.footer_copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
 }
