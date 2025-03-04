@@ -16,7 +16,7 @@ header {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 1000px;
+    width: 1100px;
     
 }
 
@@ -319,4 +319,25 @@ footer .widget_title_text {
     color: #5c5c5c;
     font-size: 12px;
     margin-top: 30px;
+}
+
+.widget_info {
+    padding: 10px;
+}
+
+.footer_areaitem .widget_body .info1 {
+    color: #cccc;
+    margin-bottom: 30px;
+}
+
+.footer_areaitem .widget_body .widget_info {
+    display: flex;
+    justify-content: space-between;
+    color: #cccc;
+}
+
+.footer_areaitem .widget_body2 p {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #cccc;
 }
