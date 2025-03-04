@@ -187,15 +187,23 @@ aside .line {
     background-color: #ccc;
     width: 100%;
     height: 2px;
+    margin-bottom: 20px;
 }
 
 aside .widget_box_item {
     width: 100%;
 }
 
-aside .item1 {
+aside .item1, .item2 {
     display: flex;
     text-align: left;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+aside .item1 p, .item2 p {
+    padding-left: 8px;
 }
 
 .flex {
@@ -263,6 +271,16 @@ footer .footer_menu {
     display: flex;
 }
 
+footer .footer_menu .fm1 h2, .fm2 h2, .fm3 h2 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
 footer .fm1, .fm2, .fm3 {
     flex: 1;
     color: white;
@@ -279,10 +297,6 @@ footer .fm1, .fm2, .fm3 {
 
 .fm3 {
     background-color: #2b4c99;
-}
-
-.flexColumn {
-    flex-direction: column;
 }
 
 .footer_area {
