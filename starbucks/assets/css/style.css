@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header .line {
+    background-color: rgb(17, 112, 80);
+    height: 10px;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.header--area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-left img {
+    width: 64px;
+    height: 64px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header--search form {
+  display: flex;  
+}
+
+.header--search input {
+    font-size: 16px;
+    padding: 9px 10px;
+    border: 1px solid #999999;
+    outline: none;
+    width: 100%;
+    width: 280px;
+}
+
+.header--search button {
+    border: 0;
+    background: transparent;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.header--search button img {
+    width: 16px;
+    height: 16px;
+}
+
+.header--menu {
+    margin-left: 60px;
+    margin-top: 9px;
+}
+
+.header--menu img {
+    width: 24px;
+    height: 24;
+    cursor: pointer;
+}
+
+.banner {
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.banner h1 {
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 95px;
+    margin-bottom: 40px;
+}
+
+.banner--images {
+    margin-top: 60px;
+}
+
+.banner--images img {
+    width: 148px;
+    height: 148px;
+    border: 5px solid #117050;
+    border-radius: 50%;
+    margin-right: 45px;
+}
+
+.area1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area1--content {
+
+}
+
+.area1--img1 {
+    background-color: green;
+}
+
+.area1--img2 {
+    background-color: red;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
