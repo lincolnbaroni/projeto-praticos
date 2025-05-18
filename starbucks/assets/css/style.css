@@ -134,6 +134,7 @@ header .line {
 .area1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-color: #D3D6DB;
 }
 
 .area1--content {
@@ -165,19 +166,15 @@ header .line {
     background-position: center;
 }
 
-.area1--content {
-  padding: 80px;  
-}
-
 .area2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-color: #D3D6DB;
 }
 
 .area2--content {
-   padding: 80px;
+  padding: 80px;  
 }
-
 
 .area2--text {
     margin-bottom: 60px;
@@ -199,6 +196,68 @@ header .line {
     background-position: center;
 }
 
-.area2--content {
-  padding: 80px;  
+
+.area3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #D3D6DB;
 }
+
+.area3--content {
+    background-image: url(../images/bg2.jpg);
+    background-position: left;
+    background-size: cover;
+    padding: 150px;
+}
+
+.area3--text {
+    margin-bottom: 60px;
+    line-height: 25px;
+}
+
+.area3--img1 {
+    height: 660px;
+    background-image: url(../images/f5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.area4 {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    background-color: #E8E9EE;
+}
+
+.area4--content {
+    padding: 180px 80px;
+}
+
+.area4--text {
+    margin-bottom: 60px;
+    line-height: 25px;
+}
+
+.area4--img1 {
+    height: 660px;
+    background-image: url(../images/bg3.jpg);
+    background-position: left;
+}
+
+.area5 {
+    height: 620px;
+    background-image: url(../images/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #333;
+    padding: 80px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
